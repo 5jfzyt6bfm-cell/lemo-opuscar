@@ -1,0 +1,28 @@
+One Week in the Jurassic — an Art Deco film (11 min)
+
+Script and voiceover: supplied by the user (recorded with ElevenLabs, voice "Peter – Youthful and Expressive").
+The voice is used as supplied; the film only levels it.
+
+Picture: everything drawn in code (Canvas2D), no generated images, no third-party artwork.
+Dinosaurs are drawn from published skeletal proportions (body length, hip height, limb ratios, skull shape).
+Drawing engine adapted from the library's Art Deco style tools.
+
+Map data: Natural Earth 1:50m land polygons (public domain), coastline only, no borders drawn.
+  https://www.naturalearthdata.com/
+The Morrison Formation outline and state label positions are approximate, drawn by hand.
+
+Fonts (SIL Open Font License 1.1, licence texts in fonts/):
+  Limelight — Nicole Fally (Sorkin Type)
+  Poiret One — Denis Masharov
+  Josefin Sans — Santiago Orozco
+  Italiana — Santiago Orozco
+
+Word timing: CMU PocketSphinx (BSD-2-Clause) with its bundled US English model.
+
+Music (original score) samples:
+  Piano: "Salamander Grand Piano V3" by Alexander Holm, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+  CC0: VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios).
+All sound effects synthesised in code (numpy).
+
+References (grammar only, nothing copied): A. M. Cassandre posters; Charles R. Knight's museum murals;
+nature-documentary staging of prehistoric animals.
