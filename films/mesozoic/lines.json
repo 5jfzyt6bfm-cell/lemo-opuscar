@@ -1,0 +1,9 @@
+[
+ {"id":"v1","text":"Two hundred million years ago. How long would you last?","voice":"bm_george","speed":1.0},
+ {"id":"v2","text":"Step through. Good news: you can breathe.","voice":"bm_george","speed":1.0},
+ {"id":"v3","text":"The air is thin, like a mountain town. It won't kill you.","voice":"bm_george","speed":1.02},
+ {"id":"v4","text":"The heat might. Forty degrees, and no clean water.","voice":"bm_george","speed":1.0},
+ {"id":"v5","text":"Without water: about three days.","voice":"bm_george","speed":0.95},
+ {"id":"v6","text":"Boil it, find shade, dodge the teeth, and you might last years.","voice":"bm_george","speed":1.05},
+ {"id":"v7","text":"The dinosaurs lasted a hundred and sixty-five million.","voice":"bm_george","speed":1.0}
+]

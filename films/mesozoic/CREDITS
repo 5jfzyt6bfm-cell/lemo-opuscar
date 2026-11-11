@@ -1,0 +1,21 @@
+How Long Would You Last? — an Art Deco short (32 s)
+
+Picture: everything drawn in code (Canvas2D), no generated images, no third-party artwork.
+Drawing engine adapted from the library's Art Deco style tools.
+
+Fonts (SIL Open Font License 1.1, licence texts in fonts/):
+  Limelight — Nicole Fally (Sorkin Type)
+  Poiret One — Denis Masharov
+  Josefin Sans — Santiago Orozco
+  Italiana — Santiago Orozco
+
+Voice: Kokoro-82M (Apache 2.0), voice bm_george.
+Voice check: CMU PocketSphinx (BSD-2-Clause) with its bundled US English model.
+
+Music (original score) samples:
+  Piano: "Salamander Grand Piano V3" by Alexander Holm, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/)
+  CC0: VS Chamber Orchestra: Community Edition and Versilian Community Sample Library (Versilian Studios).
+All sound effects synthesised in code (numpy).
+
+References (grammar only, nothing copied): A. M. Cassandre posters; Walking with Dinosaurs (1999) survival framing;
+1939 World's Fair dioramas.
