@@ -163,6 +163,7 @@ export function dino(g, sp, o = {}) {
   const S = typeof sp === 'string' ? SPECIES[sp] : sp;
   const { x = 960, y = 900, s = 60, flip = 1, phase = 0, walk = 0, jaw = 0, neck = 0, headTilt = 0, tail = 1, t = 0, alpha = 1, light = 1, keyline = true, rim = true, colors = null, tint = null, silhouette = null } = o;
   const col = { ...S.colors, ...(colors || {}) };
+  if (globalThis.__VIG) for (const k of Object.keys(col)) col[k] = mix(col[k], '#fff4e0', k === 'dark' ? .08 : .16);
   if (tint) for (const k of Object.keys(col)) col[k] = mix(col[k], tint[0], tint[1]);
   const W = (mx, my) => [x + flip * mx * s, y - my * s];
   // spine with animation: neck raise, tail sway, breathing, gait bob

@@ -8,9 +8,11 @@ import { soldier } from './humans.js';
 import { conifer, treeFern, cycad, ginkgo, horsetails, ferns, PC } from './plants.js';
 
 export const W = 1920, H = 1080;
+export const BRIGHT = typeof location !== 'undefined' && new URLSearchParams(location.search).get('look') === 'bright';
+if (BRIGHT) globalThis.__VIG = .45;
 export const tw = t => Math.floor(t * 12) / 12;   // characters on twos
 export const mech = u => { u = clamp(u); const e = eio(Math.min(1, u * 1.12)); return e + (u > .89 ? Math.sin((u - .89) / .11 * Math.PI) * .025 : 0); };
-export function bg(g, top = '#120d08', bot = C.ink) { const gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, top); gr.addColorStop(1, bot); g.fillStyle = gr; g.fillRect(0, 0, W, H); }
+export function bg(g, top = '#120d08', bot = C.ink) { if (BRIGHT) { top = '#1f5560'; bot = '#0c2a30'; } const gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, top); gr.addColorStop(1, bot); g.fillStyle = gr; g.fillRect(0, 0, W, H); }
 export function label(g, text, x, y, { size = 26, alpha = 1, color = null, track = 6, weight = 700, align = 'center' } = {}) {
   return goldText(g, text, x, y, { size, font: FONTS.sans, weight, track, shadow: false, alpha, fill: color, align });
 }
@@ -57,7 +59,8 @@ export function world(g, t, cam, o = {}) {
   const hz = C_.P(cam.x, 0, 4000)[1];
   // sky
   const top = mix(mix('#1a120a', '#2a160c', heat), '#04060a', night), midc = mix(mix('#2e4a3a', '#7a3a18', Math.max(dusk, heat * .8)), '#0a1814', night), hor = mix(mix('#a8b48a', '#f0a050', Math.max(dusk, heat)), '#18302a', night);
-  const sk = g.createLinearGradient(0, 0, 0, hz); sk.addColorStop(0, top); sk.addColorStop(.65, midc); sk.addColorStop(1, hor); g.fillStyle = sk; g.fillRect(0, 0, W, Math.max(0, hz) + 2);
+  const Bt = BRIGHT ? mix(mix('#2a6ea0', '#3a2a5a', dusk), '#04060a', night) : top, Bm = BRIGHT ? mix(mix('#7cc4d8', '#e07a4a', Math.max(dusk, heat * .8)), '#0a1814', night) : midc, Bh = BRIGHT ? mix(mix('#ffe2a8', '#ffb060', Math.max(dusk, heat)), '#18302a', night) : hor;
+  const sk = g.createLinearGradient(0, 0, 0, hz); sk.addColorStop(0, Bt); sk.addColorStop(.65, Bm); sk.addColorStop(1, Bh); g.fillStyle = sk; g.fillRect(0, 0, W, Math.max(0, hz) + 2);
   if (night > .3) for (let i = 0; i < 80; i++) { const sx = hash(i * 1.7) * W, sy = hash(i * 3.3 + 1) * hz * .9; sparkle(g, sx, sy, 2 + hash(i * 9.1) * 6, { alpha: (night - .3) * (.4 + .6 * Math.sin(t * 2 + i) * .5 + .3), glow: 0 }); }
   if (sun > 0) {
     const [sx, sy] = C_.P(cam.x + sunX, 160 - dusk * 120 - night * 200, 3000), sr = 70 + heat * 60;
@@ -73,17 +76,17 @@ export function world(g, t, cam, o = {}) {
     if (px + w < 0 || px - w > W) continue;
     const pts = []; let xx = px - w / 2, yy = py; pts.push([xx, yy]); for (let s = 0; s < 3; s++) { yy -= h / 3; pts.push([xx, yy]); xx += w * .1; pts.push([xx, yy]); }
     const R_ = pts.slice().reverse().map(([a, b]) => [2 * px - a, b]);
-    airbrush(g, [...pts, ...R_], { base: mix(mix('#4a4a46', '#6a4a30', heat), '#0c1210', night), dark: mix('#2a2824', '#05080a', night), light: mix('#8a8a7a', '#1a2a24', night), dir: -2.3 });
+    airbrush(g, [...pts, ...R_], BRIGHT ? { base: mix('#c87a50', '#0c1210', night), dark: mix('#8a4a30', '#05080a', night), light: mix('#f4b888', '#1a2a24', night), dir: -2.3 } : { base: mix(mix('#4a4a46', '#6a4a30', heat), '#0c1210', night), dark: mix('#2a2824', '#05080a', night), light: mix('#8a8a7a', '#1a2a24', night), dir: -2.3 });
   }
   // ground
-  const gg = g.createLinearGradient(0, hz, 0, H); gg.addColorStop(0, mix(mix('#5a5a3a', '#7a5a30', heat), '#0e1612', night)); gg.addColorStop(1, mix(mix('#2a2616', '#3a2410', heat), '#050806', night)); g.fillStyle = gg; g.fillRect(0, hz, W, H - hz);
+  const gg = g.createLinearGradient(0, hz, 0, H); gg.addColorStop(0, mix(BRIGHT ? mix('#a8bc5a', '#c8a050', heat) : mix('#5a5a3a', '#7a5a30', heat), '#0e1612', night)); gg.addColorStop(1, mix(BRIGHT ? mix('#5a7a2c', '#8a5a2a', heat) : mix('#2a2616', '#3a2410', heat), '#050806', night)); g.fillStyle = gg; g.fillRect(0, hz, W, H - hz);
   // river band
   if (river) {
     const z0 = river, z1 = river + riverW;
     const a = C_.P(-2000, 0, z0), b = C_.P(-2000, 0, z1);
     const yA = a[1], yB = b[1];
     if (yB < H) {
-      const rg = g.createLinearGradient(0, yB, 0, yA); rg.addColorStop(0, mix('#3a7a6a', '#0a2a24', night)); rg.addColorStop(1, mix('#1d5a4a', '#061a16', night));
+      const rg = g.createLinearGradient(0, yB, 0, yA); rg.addColorStop(0, mix(BRIGHT ? '#7ad8d0' : '#3a7a6a', '#0a2a24', night)); rg.addColorStop(1, mix(BRIGHT ? '#2aa0a8' : '#1d5a4a', '#061a16', night));
       g.fillStyle = rg; g.fillRect(0, yB, W, Math.max(0, yA - yB));
       g.save(); g.globalAlpha = .5 * (1 - night * .5);
       for (let k = 0; k < 9; k++) { const zz = lerp(z0, z1, (k + .5) / 9), yy = C_.P(0, 0, zz)[1]; const pts = []; for (let xx = 0; xx <= W; xx += 60) pts.push([xx + ((t * 30 * (1 + k * .2)) % 60), yy + Math.sin(xx * .02 + t + k) * 2]); gline(g, pts, { w: .9, alpha: .6 }); }
@@ -100,15 +103,17 @@ export function world(g, t, cam, o = {}) {
     if (px < -p.h * sc || px > W + p.h * sc || py > H + 400 * 0 + p.h * sc * 2) continue;
     if (p.h * sc < 2) continue;
     if ((p.seed % 1000) / 1000 > plants) continue;
-    items.push({ z: p.z, draw: () => PF[p.k](g, px, py, p.h * sc, { dark: Math.min(1, Math.max(0, (p.z - 60) / 200) * .8 + night * .7), sway: t * .8 + p.seed, seed: p.seed }) });
+    items.push({ z: p.z, draw: () => PF[p.k](g, px, py, p.h * sc, { dark: BRIGHT ? night * .7 : Math.min(1, Math.max(0, (p.z - 60) / 200) * .8 + night * .7), sway: t * .8 + p.seed, seed: p.seed }) });
   }
   for (const a of actors) items.push({ z: a.z, draw: () => a.draw(g, C_) });
   items.sort((a, b) => b.z - a.z);
+  let hazed = !BRIGHT || night > .5;
   for (const it of items) {
+    if (!hazed && it.z < 70) { hazed = true; const hg = g.createLinearGradient(0, 0, 0, hz + 40); hg.addColorStop(0, rgba(Bm, .0)); hg.addColorStop(.5, rgba(Bm, .25)); hg.addColorStop(1, rgba(Bh, .5)); g.fillStyle = hg; g.fillRect(0, 0, W, hz + 40); }
     it.draw();
     if (mist > 0 && it.z > 25) { /* atmospheric depth handled by a band below */ }
   }
-  if (mist > 0) { const mg = g.createLinearGradient(0, hz - 260, 0, hz + 120); mg.addColorStop(0, rgba('#c8d4b8', 0)); mg.addColorStop(.6, rgba(mix('#c8d4b8', '#203028', night), .35 * mist)); mg.addColorStop(1, rgba('#c8d4b8', 0)); g.fillStyle = mg; g.fillRect(0, hz - 260, W, 380); }
+  if (mist > 0) { const mg = g.createLinearGradient(0, hz - 260, 0, hz + 120); mg.addColorStop(0, rgba('#c8d4b8', 0)); mg.addColorStop(.6, rgba(mix(BRIGHT ? '#f0f8ff' : '#c8d4b8', '#203028', night), (BRIGHT ? .25 : .35) * mist)); mg.addColorStop(1, rgba('#c8d4b8', 0)); g.fillStyle = mg; g.fillRect(0, hz - 260, W, 380); }
   if (heat > 0) { g.save(); g.globalAlpha = heat * .25; for (let yy = hz - 80; yy < hz + 60; yy += 18) { const pts = []; for (let xx = 0; xx <= W; xx += 40) pts.push([xx, yy + Math.sin(xx * .013 + t * 5 + yy) * 4]); gline(g, pts, { w: .8 }); } g.restore(); }
   if (nv > 0) { g.save(); g.globalCompositeOperation = 'color'; g.globalAlpha = nv; g.fillStyle = '#3aff7a'; g.fillRect(0, 0, W, H); g.restore(); g.save(); g.globalCompositeOperation = 'screen'; g.globalAlpha = nv * .12; g.fillStyle = '#3aff7a'; g.fillRect(0, 0, W, H); g.restore(); }
   return C_;

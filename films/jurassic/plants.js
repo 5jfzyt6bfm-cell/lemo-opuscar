@@ -1,7 +1,9 @@
 // Late Jurassic plants in the deco manner. No grass, no flowers. x,y = base on screen, h = height in px.
 import { C, TAU, clamp, lerp, mix, rgba, gline, airbrush, fan, glow, hash } from './engine/deco.js';
 
-export const PC = { jade: '#1d6b57', jadeD: '#0b2e26', jadeL: '#4fa486', olive: '#4a5a2a', oliveD: '#1a2410', oliveL: '#8a9a5a', bark: '#3a2a20', barkD: '#140c08', barkL: '#7a5a40' };
+const BR = typeof location !== 'undefined' && new URLSearchParams(location.search).get('look') === 'bright';
+export const PC = BR ? { jade: '#2a9a72', jadeD: '#0e4a3a', jadeL: '#86e0b4', olive: '#6e9236', oliveD: '#2a3a14', oliveL: '#c4dc74', bark: '#6e4c34', barkD: '#2a180e', barkL: '#c09468' }
+  : { jade: '#1d6b57', jadeD: '#0b2e26', jadeL: '#4fa486', olive: '#4a5a2a', oliveD: '#1a2410', oliveL: '#8a9a5a', bark: '#3a2a20', barkD: '#140c08', barkL: '#7a5a40' };
 
 function trunk(g, x, y, w0, w1, h, bend = 0, dark = 0) {
   const P = [[x - w0, y], [x + w0, y], [x + bend + w1, y - h], [x + bend - w1, y - h]];

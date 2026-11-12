@@ -8,6 +8,8 @@ if (Q.has('sheet')) {
 } else {
   film = await import('./film.js'); await film.init();
   window.DUR = film.DUR; window.EV = film.events(); window.TEXTS = t => film.texts(t);
-  window.render = t => { g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'source-over'; film.renderFilm(g, t); };
+  const clip = Q.get('clip') ? Q.get('clip').split(',').map(Number) : null;   // clip=start,duration renders a section only
+  if (clip) { window.DUR = clip[1]; window.EV = []; }
+  window.render = t => { g.setTransform(1, 0, 0, 1, 0, 0); g.globalAlpha = 1; g.globalCompositeOperation = 'source-over'; film.renderFilm(g, clip ? t + clip[0] : t); };
 }
 window.READY = true;

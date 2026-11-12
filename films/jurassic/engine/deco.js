@@ -314,6 +314,7 @@ export function ground(g, W = 1920, H = 1080, { top = C.black, bot = C.ink, vig 
   if (vig) vignette(g, W, H, vig);
 }
 export function vignette(g, W = 1920, H = 1080, a = .55) {
+  a *= (globalThis.__VIG ?? 1);
   const gr = g.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, H * .95); gr.addColorStop(0, 'rgba(0,0,0,0)'); gr.addColorStop(1, `rgba(0,0,0,${a})`);
   g.fillStyle = gr; g.fillRect(0, 0, W, H);
 }
