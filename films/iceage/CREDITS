@@ -1,0 +1,23 @@
+Could You Beat an Ice Age Predator? — an Art Deco film (10 min)
+
+Script and voiceover: supplied by the user (recorded with ElevenLabs, voice "Peter – Youthful and Expressive").
+The voice is used as supplied; the film only levels it. The script's last two lines are not in the recording
+and appear as title cards.
+
+Picture: everything drawn in code (Canvas2D), no generated images, no third-party artwork.
+Animals drawn from published body proportions; the Chauvet-style lions are our own drawings, not tracings.
+Drawing engine adapted from the library's Art Deco style tools.
+
+Fonts (SIL Open Font License 1.1, licence texts in fonts/):
+  Limelight — Nicole Fally (Sorkin Type)
+  Poiret One — Denis Masharov
+  Josefin Sans — Santiago Orozco
+  Italiana — Santiago Orozco
+
+Word timing: CMU PocketSphinx (BSD-2-Clause) with its bundled US English model.
+
+Music (original score) samples, CC0: VS Chamber Orchestra: Community Edition and
+Versilian Community Sample Library (Versilian Studios). All sound effects synthesised in code (numpy).
+
+References (grammar only, nothing copied): A. M. Cassandre posters; 1950s UPA character design;
+the Chauvet Cave paintings (subject of the film, redrawn in our own line).
