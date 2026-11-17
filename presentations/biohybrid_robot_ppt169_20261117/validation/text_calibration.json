@@ -1,0 +1,96 @@
+{
+  "roles": {
+    "body": {
+      "family": "Segoe UI",
+      "size": 24.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 3.9,
+      "latin_chars_per_100px": 8.9,
+      "caps_chars_per_100px": 7.5,
+      "digits_chars_per_100px": 7.3,
+      "citation_chars_per_100px": 8.5,
+      "script_clusters_per_100px": {
+        "Cyrillic": 7.1
+      },
+      "longest_planned_line": null
+    },
+    "title": {
+      "family": "Segoe UI",
+      "size": 44.0,
+      "weight": "bold",
+      "cjk_chars_per_100px": 2.1,
+      "latin_chars_per_100px": 4.6,
+      "caps_chars_per_100px": 3.8,
+      "digits_chars_per_100px": 3.7,
+      "citation_chars_per_100px": 4.3,
+      "script_clusters_per_100px": {
+        "Cyrillic": 3.7
+      },
+      "longest_planned_line": null
+    },
+    "caption": {
+      "family": "Segoe UI",
+      "size": 18.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 5.2,
+      "latin_chars_per_100px": 11.8,
+      "caps_chars_per_100px": 10.0,
+      "digits_chars_per_100px": 9.7,
+      "citation_chars_per_100px": 11.3,
+      "script_clusters_per_100px": {
+        "Cyrillic": 9.5
+      },
+      "longest_planned_line": null
+    },
+    "hero": {
+      "family": "Segoe UI",
+      "size": 64.0,
+      "weight": "bold",
+      "cjk_chars_per_100px": 1.5,
+      "latin_chars_per_100px": 3.1,
+      "caps_chars_per_100px": 2.6,
+      "digits_chars_per_100px": 2.6,
+      "citation_chars_per_100px": 3.0,
+      "script_clusters_per_100px": {
+        "Cyrillic": 2.5
+      },
+      "longest_planned_line": null
+    },
+    "label": {
+      "family": "Segoe UI",
+      "size": 20.0,
+      "weight": "bold",
+      "cjk_chars_per_100px": 4.7,
+      "latin_chars_per_100px": 10.0,
+      "caps_chars_per_100px": 8.4,
+      "digits_chars_per_100px": 8.2,
+      "citation_chars_per_100px": 9.5,
+      "script_clusters_per_100px": {
+        "Cyrillic": 8.2
+      },
+      "longest_planned_line": null
+    },
+    "lead": {
+      "family": "Segoe UI",
+      "size": 28.0,
+      "weight": "normal",
+      "cjk_chars_per_100px": 3.4,
+      "latin_chars_per_100px": 7.6,
+      "caps_chars_per_100px": 6.4,
+      "digits_chars_per_100px": 6.2,
+      "citation_chars_per_100px": 7.3,
+      "script_clusters_per_100px": {
+        "Cyrillic": 6.1
+      },
+      "longest_planned_line": null
+    }
+  },
+  "script_samples": {
+    "Cyrillic": "Биогибридныйроботсживымимышцамисгибаетпа"
+  },
+  "source": "--role",
+  "generated_at": "2026-11-17T15:54:09Z",
+  "notes": [
+    "rates for hero, label, title are measured at bold weight"
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "schema": "ppt-master.svg-quality-report.v1",
+  "stage": "final",
+  "target": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117",
+  "source_fingerprint": {
+    "algorithm": "sha256",
+    "digest": "f81d97103a9147952682b5d1cf0a8d483ef343c6bf0538932fd8db11ae4de859",
+    "file_count": 6,
+    "files": [
+      {
+        "file": "01_cover.svg",
+        "sha256": "7ce3ba3edb5c229cd53068c79e6cf3d2c4b06f1b6f145010a0fc0d125bf4a508"
+      },
+      {
+        "file": "02_japan_culture.svg",
+        "sha256": "c13b3c520bdd5142bad1baa501c139fbecdb5a6f4a6b404cbea7e649676b4177"
+      },
+      {
+        "file": "03_discovery.svg",
+        "sha256": "d4e87020d9d5f0271b3b19c5c99c7eb0aff17dd6223556d7996d4336e0580240"
+      },
+      {
+        "file": "04_how_it_works.svg",
+        "sha256": "642666988597ab47eaec73e4844c7e6cc5276b4d3829385a944b0e30d86e79e3"
+      },
+      {
+        "file": "05_future.svg",
+        "sha256": "0277514c4d70448dd1179a904ce5cfaf1c67cf1b73c92b9b5e2b03f999320a81"
+      },
+      {
+        "file": "06_conclusion.svg",
+        "sha256": "b3388c114e91b0816bbf2896cf43e931a76c6f0a09d34e5650a4494c78dd9ee1"
+      }
+    ]
+  },
+  "summary": {
+    "total": 6,
+    "passed": 6,
+    "warnings": 0,
+    "errors": 0
+  },
+  "issue_types": {},
+  "categories": {
+    "blocking": {
+      "count": 0,
+      "issues": []
+    },
+    "introduced": {
+      "count": 0,
+      "issues": []
+    },
+    "inherited": {
+      "count": 0,
+      "issues": []
+    },
+    "source-import": {
+      "count": 0,
+      "summary": {
+        "warning_count": 0,
+        "by_code": {}
+      }
+    }
+  },
+  "drift": {
+    "colors": {},
+    "fonts": {},
+    "sizes": {}
+  },
+  "carrier_receipt": {
+    "scope": "informational-not-a-quota",
+    "pages": 6,
+    "totals": {
+      "text_elements": 66,
+      "image_placements": 0,
+      "icons": 15,
+      "svg_geometry_elements": 66,
+      "preset_shapes": 7,
+      "page_frame_elements": 6,
+      "marker_uses": 0,
+      "inline_emphasis_runs": 12,
+      "gradient_uses": 12,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "pages_with": {
+      "images": 0,
+      "icons": 4,
+      "presets": 3,
+      "charts": 0,
+      "tables": 0,
+      "formulas": 0,
+      "inline_emphasis_runs": 5,
+      "gradient_uses": 6,
+      "filter_uses": 0,
+      "text_effects": 0
+    },
+    "relationship_pages": null,
+    "geometry_elements": {
+      "circle": 8,
+      "ellipse": 0,
+      "line": 30,
+      "path": 0,
+      "polygon": 0,
+      "polyline": 0,
+      "rect": 28
+    },
+    "preset_names": {
+      "chevron": 2,
+      "homePlate": 1,
+      "leftBrace": 1,
+      "mathEqual": 1,
+      "mathPlus": 2
+    },
+    "native_objects": {
+      "chart": 0,
+      "formula_block": 0,
+      "formula_inline": 0,
+      "other": 0,
+      "table": 0
+    },
+    "image_page_max_frame_share_range": []
+  },
+  "project_issues": {
+    "template": [],
+    "animation": [],
+    "illustration": [],
+    "communication_trace": [],
+    "pptx_structure": []
+  },
+  "files": [
+    {
+      "file": "01_cover.svg",
+      "path": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117/svg_output/01_cover.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 8,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 1,
+            "gradient_uses": 4,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 23,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, Courier New, monospace",
+          "Segoe UI, Arial, sans-serif"
+        ],
+        "text_elements": 8,
+        "tspan_elements": 5
+      },
+      "passed": true,
+      "source_sha256": "7ce3ba3edb5c229cd53068c79e6cf3d2c4b06f1b6f145010a0fc0d125bf4a508"
+    },
+    {
+      "file": "02_japan_culture.svg",
+      "path": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117/svg_output/02_japan_culture.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 12,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 1,
+            "preset_names": {
+              "leftBrace": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, Courier New, monospace",
+          "Segoe UI, Arial, sans-serif"
+        ],
+        "text_elements": 12,
+        "tspan_elements": 13
+      },
+      "passed": true,
+      "source_sha256": "c13b3c520bdd5142bad1baa501c139fbecdb5a6f4a6b404cbea7e649676b4177"
+    },
+    {
+      "file": "03_discovery.svg",
+      "path": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117/svg_output/03_discovery.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 13,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 4,
+          "effects": {
+            "inline_emphasis_runs": 2,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 6,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 3,
+            "preset_names": {
+              "mathEqual": 1,
+              "mathPlus": 2
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, Courier New, monospace",
+          "Segoe UI, Arial, sans-serif"
+        ],
+        "text_elements": 13,
+        "tspan_elements": 10
+      },
+      "passed": true,
+      "source_sha256": "d4e87020d9d5f0271b3b19c5c99c7eb0aff17dd6223556d7996d4336e0580240"
+    },
+    {
+      "file": "04_how_it_works.svg",
+      "path": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117/svg_output/04_how_it_works.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 14,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 3,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 1,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 0,
+              "ellipse": 0,
+              "line": 0,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 3,
+            "preset_names": {
+              "chevron": 2,
+              "homePlate": 1
+            },
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, Courier New, monospace",
+          "Segoe UI, Arial, sans-serif"
+        ],
+        "text_elements": 14,
+        "tspan_elements": 15
+      },
+      "passed": true,
+      "source_sha256": "642666988597ab47eaec73e4844c7e6cc5276b4d3829385a944b0e30d86e79e3"
+    },
+    {
+      "file": "05_future.svg",
+      "path": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117/svg_output/05_future.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 15,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 5,
+          "effects": {
+            "inline_emphasis_runs": 0,
+            "gradient_uses": 2,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 3,
+              "ellipse": 0,
+              "line": 1,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, Courier New, monospace",
+          "Segoe UI, Arial, sans-serif"
+        ],
+        "text_elements": 15,
+        "tspan_elements": 18
+      },
+      "passed": true,
+      "source_sha256": "0277514c4d70448dd1179a904ce5cfaf1c67cf1b73c92b9b5e2b03f999320a81"
+    },
+    {
+      "file": "06_conclusion.svg",
+      "path": "/home/user/lemo-opuscar/presentations/biohybrid_robot_ppt169_20261117/svg_output/06_conclusion.svg",
+      "exists": true,
+      "errors": [],
+      "warnings": [],
+      "info": {
+        "viewbox": "0 0 1280 720",
+        "carrier_receipt": {
+          "text_elements": 4,
+          "images": {
+            "placements": 0,
+            "files": [],
+            "max_frame_share": 0.0
+          },
+          "icons": 0,
+          "effects": {
+            "inline_emphasis_runs": 3,
+            "gradient_uses": 3,
+            "filter_uses": 0,
+            "text_effects": 0
+          },
+          "geometry": {
+            "svg_elements": {
+              "rect": 4,
+              "circle": 2,
+              "ellipse": 0,
+              "line": 6,
+              "polyline": 0,
+              "polygon": 0,
+              "path": 0
+            },
+            "preset_shapes": 0,
+            "preset_names": {},
+            "page_frame_elements": 1,
+            "marker_uses": {
+              "start": 0,
+              "mid": 0,
+              "end": 0
+            }
+          },
+          "native_objects": {
+            "chart": 0,
+            "table": 0,
+            "formula_block": 0,
+            "formula_inline": 0,
+            "other": 0
+          }
+        },
+        "fonts": [
+          "Consolas, Courier New, monospace",
+          "Segoe UI, Arial, sans-serif"
+        ],
+        "text_elements": 4,
+        "tspan_elements": 8
+      },
+      "passed": true,
+      "source_sha256": "b3388c114e91b0816bbf2896cf43e931a76c6f0a09d34e5650a4494c78dd9ee1"
+    }
+  ]
+}

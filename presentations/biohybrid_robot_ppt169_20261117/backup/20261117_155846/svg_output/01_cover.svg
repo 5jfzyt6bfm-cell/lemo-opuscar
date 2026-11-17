@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ru" font-family="Segoe UI, Arial, sans-serif" data-pptx-page-role="cover">
+  <defs>
+    <radialGradient id="bgField" cx="0.72" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#16223A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </radialGradient>
+    <radialGradient id="muscleGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF5A6E" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#FF5A6E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="muscleBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C81E3A"/>
+      <stop offset="100%" stop-color="#FF5A6E"/>
+    </linearGradient>
+    <linearGradient id="accentRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF5A6E"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="url(#bgField)"/>
+
+  <g id="title-block" data-pptx-bounds="72 130 650 450">
+    <text x="80" y="170" font-family="Consolas, Courier New, monospace" font-size="18" font-weight="bold" fill="#38BDF8">НАУЧНЫЕ ОТКРЫТИЯ XXI ВЕКА · ЯПОНИЯ</text>
+    <text font-size="58" font-weight="bold" fill="#F1F5F9"><tspan x="80" y="262">Робот-андроид</tspan><tspan x="80" dy="70">с <tspan fill="#FF5A6E">живыми мышцами</tspan></tspan></text>
+    <rect x="80" y="370" width="96" height="4" fill="url(#accentRule)"/>
+    <text font-size="28" fill="#CBD5E1"><tspan x="80" y="424">Как японские учёные заставили живые</tspan><tspan x="80" dy="40">клетки двигать механический палец</tspan></text>
+    <text x="80" y="560" font-family="Consolas, Courier New, monospace" font-size="18" fill="#94A3B8">Токийский университет · 2018</text>
+  </g>
+
+  <g id="finger-diagram" data-pptx-bounds="740 140 500 520">
+    <circle cx="990" cy="400" r="250" fill="url(#muscleGlow)"/>
+    <g id="skeleton" fill="#1E293B" stroke="#64748B" stroke-width="2">
+      <rect x="780" y="430" width="230" height="64" rx="12"/>
+      <rect x="1030" y="440" width="190" height="44" rx="22" transform="rotate(-40 1030 462)"/>
+    </g>
+    <circle cx="1030" cy="462" r="24" fill="#0B1220" stroke="#38BDF8" stroke-width="4"/>
+    <g id="muscle-flexor">
+      <rect x="800" y="398" width="210" height="24" rx="12" fill="url(#muscleBand)"/>
+      <g stroke="#FFE4E6" stroke-opacity="0.55" stroke-width="1.5">
+        <line x1="822" y1="403" x2="822" y2="417"/><line x1="840" y1="403" x2="840" y2="417"/><line x1="858" y1="403" x2="858" y2="417"/><line x1="876" y1="403" x2="876" y2="417"/><line x1="894" y1="403" x2="894" y2="417"/><line x1="912" y1="403" x2="912" y2="417"/><line x1="930" y1="403" x2="930" y2="417"/><line x1="948" y1="403" x2="948" y2="417"/><line x1="966" y1="403" x2="966" y2="417"/><line x1="984" y1="403" x2="984" y2="417"/>
+      </g>
+      <line x1="1008" y1="410" x2="1062" y2="406" stroke="#FF5A6E" stroke-width="3"/>
+    </g>
+    <g id="muscle-extensor">
+      <rect x="800" y="502" width="210" height="24" rx="12" fill="#FF5A6E" fill-opacity="0.4"/>
+      <g stroke="#FFE4E6" stroke-opacity="0.35" stroke-width="1.5">
+        <line x1="822" y1="507" x2="822" y2="521"/><line x1="840" y1="507" x2="840" y2="521"/><line x1="858" y1="507" x2="858" y2="521"/><line x1="876" y1="507" x2="876" y2="521"/><line x1="894" y1="507" x2="894" y2="521"/><line x1="912" y1="507" x2="912" y2="521"/><line x1="930" y1="507" x2="930" y2="521"/><line x1="948" y1="507" x2="948" y2="521"/><line x1="966" y1="507" x2="966" y2="521"/><line x1="984" y1="507" x2="984" y2="521"/>
+      </g>
+      <line x1="1008" y1="514" x2="1046" y2="482" stroke="#FF5A6E" stroke-opacity="0.6" stroke-width="3"/>
+    </g>
+    <circle cx="1206" cy="318" r="20" fill="none" stroke="#FBBF24" stroke-width="6"/>
+    <g id="diagram-labels" font-size="18">
+      <text x="800" y="384" font-weight="bold" fill="#FF5A6E">живая мышца</text>
+      <text x="800" y="562" fill="#94A3B8">каркас: металл и пластик</text>
+      <line x1="1044" y1="484" x2="1086" y2="548" stroke="#38BDF8" stroke-width="1.5"/>
+      <text x="1092" y="562" fill="#38BDF8">сустав</text>
+      <text x="1230" y="276" text-anchor="end" fill="#FBBF24">переносит предметы</text>
+    </g>
+  </g>
+</svg>

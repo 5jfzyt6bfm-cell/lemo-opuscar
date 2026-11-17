@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ru" font-family="Segoe UI, Arial, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <radialGradient id="bgField" cx="0.72" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#16223A" />
+      <stop offset="100%" stop-color="#0B1220" />
+    </radialGradient>
+    <linearGradient id="timeRule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#FF5A6E" />
+    </linearGradient>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="url(#bgField)" />
+
+  <g id="header" data-pptx-bounds="72 85 1136 110" font-weight="bold">
+    <text x="80" y="110" font-family="Consolas, Courier New, monospace" font-size="18" fill="#38BDF8">ЧТО ДАЛЬШЕ</text>
+    <text x="80" y="170" font-size="44" fill="#F1F5F9">От пальца — к целой руке</text>
+  </g>
+
+  <g id="timeline" data-pptx-bounds="72 205 1136 225">
+    <rect x="120" y="248" width="790" height="4" fill="url(#timeRule)" />
+    <line x1="940" y1="250" x2="1200" y2="250" stroke="#64748B" stroke-width="3" stroke-dasharray="8,6" />
+    <g id="node-2018">
+      <circle cx="134" cy="250" r="14" fill="#38BDF8" />
+      <text x="120" y="304" font-size="26" font-weight="bold" fill="#38BDF8">2018</text>
+      <text font-size="20" fill="#CBD5E1"><tspan x="120" y="340">Палец сгибается</tspan><tspan x="120" dy="26">и переносит кольцо</tspan></text>
+    </g>
+    <g id="node-2025">
+      <circle cx="574" cy="250" r="14" fill="#FF5A6E" />
+      <text x="560" y="304" font-size="26" font-weight="bold" fill="#FF5A6E">2025</text>
+      <text font-size="20" fill="#CBD5E1"><tspan x="560" y="340">Рука длиной 18 см с мышцами</tspan><tspan x="560" dy="26">из клеток человека: показывает</tspan><tspan x="560" dy="26">жест «ножницы»</tspan></text>
+    </g>
+    <g id="node-future">
+      <circle cx="954" cy="250" r="14" fill="#0B1220" stroke="#FBBF24" stroke-width="3" stroke-dasharray="4,4" />
+      <text x="940" y="304" font-size="26" font-weight="bold" fill="#FBBF24">Будущее</text>
+      <text font-size="20" fill="#CBD5E1"><tspan x="940" y="340">Биогибридные протезы</tspan><tspan x="940" dy="26">и роботы, похожие</tspan><tspan x="940" dy="26">на живых существ</tspan></text>
+    </g>
+  </g>
+
+  <g id="uses" data-pptx-bounds="76 445 696 215">
+    <rect x="80" y="450" width="688" height="200" rx="16" fill="#131C2E" stroke="#263248" stroke-width="1.5" />
+    <text x="104" y="490" font-family="Consolas, Courier New, monospace" font-size="18" font-weight="bold" fill="#38BDF8">ГДЕ ПРИГОДИТСЯ</text>
+    <g id="use-prosthetics">
+      <use data-icon="tabler-outline/hand-stop" x="104" y="512" width="40" height="40" fill="#F1F5F9" stroke-width="2" />
+      <text font-size="20" fill="#F1F5F9"><tspan x="104" y="588">Протезы</tspan><tspan x="104" dy="26" fill="#94A3B8">рук и ног</tspan></text>
+    </g>
+    <g id="use-drugs">
+      <use data-icon="tabler-outline/pill" x="324" y="512" width="40" height="40" fill="#F1F5F9" stroke-width="2" />
+      <text font-size="20" fill="#F1F5F9"><tspan x="324" y="588">Испытание</tspan><tspan x="324" dy="26" fill="#94A3B8">новых лекарств</tspan></text>
+    </g>
+    <g id="use-robots">
+      <use data-icon="tabler-outline/robot" x="544" y="512" width="40" height="40" fill="#F1F5F9" stroke-width="2" />
+      <text font-size="20" fill="#F1F5F9"><tspan x="544" y="588">Роботы,</tspan><tspan x="544" dy="26" fill="#94A3B8">похожие на живых</tspan></text>
+    </g>
+  </g>
+
+  <g id="limits" data-pptx-bounds="784 445 424 215">
+    <rect x="790" y="450" width="410" height="200" rx="16" fill="#FF5A6E" fill-opacity="0.08" stroke="#FF5A6E" stroke-opacity="0.6" stroke-width="1.5" />
+    <text x="814" y="490" font-family="Consolas, Courier New, monospace" font-size="18" font-weight="bold" fill="#FF5A6E">ПОКА СЛОЖНО</text>
+    <use data-icon="tabler-outline/droplet" x="814" y="516" width="32" height="32" fill="#FF5A6E" stroke-width="2" />
+    <text font-size="20" fill="#CBD5E1"><tspan x="860" y="530">Работает только</tspan><tspan x="860" dy="24">в жидкости</tspan></text>
+    <use data-icon="tabler-outline/battery-2" x="814" y="584" width="32" height="32" fill="#FF5A6E" stroke-width="2" />
+    <text font-size="20" fill="#CBD5E1"><tspan x="860" y="598">Мышцы «устают»</tspan><tspan x="860" dy="24">со временем</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ru" font-family="Segoe UI, Arial, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <radialGradient id="bgField" cx="0.72" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#16223A" />
+      <stop offset="100%" stop-color="#0B1220" />
+    </radialGradient>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="url(#bgField)" />
+
+  <g id="header" data-pptx-bounds="72 85 1136 110" font-weight="bold">
+    <text x="80" y="110" font-family="Consolas, Courier New, monospace" font-size="18" fill="#38BDF8">ОТКРЫТИЕ · 2018 · ТОКИЙСКИЙ УНИВЕРСИТЕТ</text>
+    <text x="80" y="170" font-size="44" fill="#F1F5F9">Биогибридный робот: палец из живых мышц</text>
+  </g>
+
+  <g id="formula" data-pptx-bounds="72 225 1136 235">
+    <g id="tile-metal">
+      <rect x="90" y="240" width="230" height="200" rx="16" fill="#131C2E" stroke="#263248" stroke-width="1.5" />
+      <use data-icon="tabler-outline/settings" x="181" y="266" width="48" height="48" fill="#94A3B8" stroke-width="2" />
+      <text x="205" y="364" text-anchor="middle" font-size="24" font-weight="bold" fill="#F1F5F9">Металл</text>
+      <text x="205" y="396" text-anchor="middle" font-size="18" fill="#94A3B8">прочный каркас</text>
+    </g>
+    <g id="p03-plus-1" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="mathPlus" data-pptx-frame="328 318 44 44" fill="#64748B" stroke="none">
+<path d="M 333.83 334.83 L 344.83 334.83 L 344.83 323.83 L 355.17 323.83 L 355.17 334.83 L 366.17 334.83 L 366.17 345.17 L 355.17 345.17 L 355.17 356.17 L 344.83 356.17 L 344.83 345.17 L 333.83 345.17 Z" />
+</g>
+    <g id="tile-plastic">
+      <rect x="380" y="240" width="230" height="200" rx="16" fill="#131C2E" stroke="#263248" stroke-width="1.5" />
+      <use data-icon="tabler-outline/cube" x="471" y="266" width="48" height="48" fill="#94A3B8" stroke-width="2" />
+      <text x="495" y="364" text-anchor="middle" font-size="24" font-weight="bold" fill="#F1F5F9">Пластик</text>
+      <text x="495" y="396" text-anchor="middle" font-size="18" fill="#94A3B8">лёгкие детали</text>
+    </g>
+    <g id="p03-plus-2" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="mathPlus" data-pptx-frame="618 318 44 44" fill="#64748B" stroke="none">
+<path d="M 623.83 334.83 L 634.83 334.83 L 634.83 323.83 L 645.17 323.83 L 645.17 334.83 L 656.17 334.83 L 656.17 345.17 L 645.17 345.17 L 645.17 356.17 L 634.83 356.17 L 634.83 345.17 L 623.83 345.17 Z" />
+</g>
+    <g id="tile-cells">
+      <rect x="670" y="240" width="230" height="200" rx="16" fill="#FF5A6E" fill-opacity="0.12" stroke="#FF5A6E" stroke-width="2" />
+      <use data-icon="tabler-outline/dna-2" x="761" y="266" width="48" height="48" fill="#FF5A6E" stroke-width="2" />
+      <text x="785" y="364" text-anchor="middle" font-size="24" font-weight="bold" fill="#FF5A6E">Живые клетки</text>
+      <text x="785" y="396" text-anchor="middle" font-size="18" fill="#CBD5E1">мышечная ткань</text>
+    </g>
+    <g id="p03-equal" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="mathEqual" data-pptx-frame="908 318 44 44" fill="#FF5A6E" stroke="none">
+<path d="M 913.83 327.06 L 946.17 327.06 L 946.17 337.41 L 913.83 337.41 Z M 913.83 342.59 L 946.17 342.59 L 946.17 352.94 L 913.83 352.94 Z" />
+</g>
+    <g id="tile-result">
+      <rect x="960" y="240" width="230" height="200" rx="16" fill="#FF5A6E" />
+      <use data-icon="tabler-outline/hand-finger" x="1051" y="262" width="48" height="48" fill="#0B1220" stroke-width="2" />
+      <text text-anchor="middle" font-size="24" font-weight="bold" fill="#0B1220"><tspan x="1075" y="346">Биогибридный</tspan><tspan x="1075" dy="30">палец</tspan></text>
+      <text x="1075" y="414" text-anchor="middle" font-size="18" fill="#3B0A12">сгибается в суставе</text>
+    </g>
+  </g>
+
+  <g id="what-it-does" data-pptx-bounds="72 480 720 160">
+    <text font-size="28" fill="#CBD5E1"><tspan x="80" y="520">Он имитирует движения <tspan font-weight="bold" fill="#F1F5F9">человеческого</tspan></tspan><tspan x="80" dy="40"><tspan font-weight="bold" fill="#F1F5F9">пальца</tspan>: сгибается в суставе и переносит</tspan><tspan x="80" dy="40">небольшие предметы.</tspan></text>
+  </g>
+
+  <g id="credit" data-pptx-bounds="820 480 400 160">
+    <rect x="830" y="492" width="3" height="132" fill="#38BDF8" />
+    <text font-size="18" fill="#94A3B8"><tspan x="852" y="516">Команда профессора Сёдзи Такэути,</tspan><tspan x="852" dy="26">Институт промышленных наук</tspan><tspan x="852" dy="26">Токийского университета</tspan></text>
+    <text x="852" y="612" font-family="Consolas, Courier New, monospace" font-size="18" fill="#38BDF8">Science Robotics, 2018</text>
+  </g>
+</svg>

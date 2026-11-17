@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ru" font-family="Segoe UI, Arial, sans-serif" data-pptx-page-role="ending">
+  <defs>
+    <radialGradient id="bgField" cx="0.72" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#16223A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </radialGradient>
+    <radialGradient id="muscleGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FF5A6E" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FF5A6E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="muscleBand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C81E3A"/>
+      <stop offset="100%" stop-color="#FF5A6E"/>
+    </linearGradient>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="url(#bgField)"/>
+
+  <g id="conclusion" data-pptx-bounds="72 125 1136 190">
+    <text x="80" y="150" font-family="Consolas, Courier New, monospace" font-size="18" font-weight="bold" fill="#38BDF8">ВЫВОД</text>
+    <text font-size="28" fill="#CBD5E1"><tspan x="80" y="212">Это открытие показывает, насколько далеко продвинулась</tspan><tspan x="80" dy="42">современная наука и как технологии могут изменить</tspan><tspan x="80" dy="42"><tspan font-weight="bold" fill="#F1F5F9">будущее человечества</tspan>.</tspan></text>
+  </g>
+
+  <g id="question" data-pptx-bounds="72 350 820 150">
+    <text font-size="56" font-weight="bold" fill="#F1F5F9"><tspan x="80" y="410">Где проходит граница</tspan><tspan x="80" dy="70">между <tspan fill="#FF5A6E">живым</tspan> и <tspan fill="#38BDF8">машиной</tspan>?</tspan></text>
+  </g>
+
+  <g id="thanks" data-pptx-bounds="72 575 600 60">
+    <text x="80" y="616" font-size="28" fill="#94A3B8">Спасибо за внимание!</text>
+  </g>
+
+  <g id="finger-motif" data-pptx-bounds="900 330 320 330">
+    <circle cx="1080" cy="520" r="140" fill="url(#muscleGlow)"/>
+    <rect x="1088" y="360" width="44" height="170" rx="22" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+    <rect x="940" y="566" width="140" height="56" rx="12" fill="#1E293B" stroke="#64748B" stroke-width="2"/>
+    <rect x="1050" y="410" width="22" height="140" rx="11" fill="url(#muscleBand)"/>
+    <g stroke="#FFE4E6" stroke-opacity="0.55" stroke-width="1.5">
+      <line x1="1054" y1="430" x2="1068" y2="430"/><line x1="1054" y1="448" x2="1068" y2="448"/><line x1="1054" y1="466" x2="1068" y2="466"/><line x1="1054" y1="484" x2="1068" y2="484"/><line x1="1054" y1="502" x2="1068" y2="502"/><line x1="1054" y1="520" x2="1068" y2="520"/>
+    </g>
+    <circle cx="1110" cy="566" r="24" fill="#0B1220" stroke="#38BDF8" stroke-width="4"/>
+  </g>
+</svg>

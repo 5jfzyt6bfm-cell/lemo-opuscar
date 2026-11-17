@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" lang="ru" font-family="Segoe UI, Arial, sans-serif" data-pptx-page-role="content">
+  <defs>
+    <radialGradient id="bgField" cx="0.72" cy="0.5" r="0.75">
+      <stop offset="0%" stop-color="#16223A" />
+      <stop offset="100%" stop-color="#0B1220" />
+    </radialGradient>
+  </defs>
+  <rect id="bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="url(#bgField)" />
+
+  <g id="header" data-pptx-bounds="72 85 1136 110" font-weight="bold">
+    <text x="80" y="110" font-family="Consolas, Courier New, monospace" font-size="18" fill="#38BDF8">КАК ЭТО РАБОТАЕТ</text>
+    <text x="80" y="170" font-size="44" fill="#F1F5F9">Три шага к живому движению</text>
+  </g>
+
+  <g id="step-grow" data-pptx-bounds="72 200 372 320">
+    <g id="p04-step1-shape" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="homePlate" data-pptx-frame="80 205 360 64" fill="#0E4A63" stroke="none">
+<path d="M 80 205 L 408 205 L 440 237 L 408 269 L 80 269 Z" />
+</g>
+    <text x="104" y="245" font-size="22" font-weight="bold" fill="#F1F5F9">1 · Вырастить мышцы</text>
+    <use data-icon="tabler-outline/flask" x="96" y="292" width="40" height="40" fill="#38BDF8" stroke-width="2" />
+    <text font-size="24" fill="#CBD5E1"><tspan x="96" y="372">Из клеток-миобластов</tspan><tspan x="96" dy="34">на листах гидрогеля</tspan><tspan x="96" dy="34">выращивают мышечную</tspan><tspan x="96" dy="34">ткань.</tspan></text>
+  </g>
+
+  <g id="step-pair" data-pptx-bounds="448 200 372 320">
+    <g id="p04-step2-shape" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="452 205 364 64" fill="#1D4E89" stroke="none">
+<path d="M 452 205 L 784 205 L 816 237 L 784 269 L 452 269 L 484 237 Z" />
+</g>
+    <text x="494" y="245" font-size="22" font-weight="bold" fill="#F1F5F9">2 · Соединить в пару</text>
+    <use data-icon="tabler-outline/activity" x="494" y="292" width="40" height="40" fill="#38BDF8" stroke-width="2" />
+    <text font-size="24" fill="#CBD5E1"><tspan x="494" y="372">Две мышцы работают</tspan><tspan x="494" dy="34">в паре: одна <tspan font-weight="bold" fill="#F1F5F9">сокращается</tspan>,</tspan><tspan x="494" dy="34">другая <tspan font-weight="bold" fill="#F1F5F9">растягивается</tspan> —</tspan><tspan x="494" dy="34">как в нашей руке.</tspan></text>
+  </g>
+
+  <g id="step-impulse" data-pptx-bounds="824 200 384 320">
+    <g id="p04-step3-shape" data-pptx-authoring="preset" data-pptx-object="shape" data-pptx-prst="chevron" data-pptx-frame="828 205 372 64" fill="#FF5A6E" stroke="none">
+<path d="M 828 205 L 1168 205 L 1200 237 L 1168 269 L 828 269 L 860 237 Z" />
+</g>
+    <text x="870" y="245" font-size="22" font-weight="bold" fill="#0B1220">3 · Дать импульс</text>
+    <use data-icon="tabler-outline/bolt" x="870" y="292" width="40" height="40" fill="#FF5A6E" stroke-width="2" />
+    <text font-size="24" fill="#CBD5E1"><tspan x="870" y="372">Электрический ток</tspan><tspan x="870" dy="34">заставляет мышцу</tspan><tspan x="870" dy="34">сократиться — и палец</tspan><tspan x="870" dy="34"><tspan font-weight="bold" fill="#FF5A6E">сгибается в суставе</tspan>.</tspan></text>
+  </g>
+
+  <g id="kpi-angle" data-pptx-bounds="76 540 368 120">
+    <rect x="80" y="545" width="360" height="110" rx="14" fill="#131C2E" stroke="#263248" stroke-width="1.5" />
+    <text x="104" y="598" font-size="44" font-weight="bold" fill="#FF5A6E">≈ 90°</text>
+    <text x="104" y="634" font-size="18" fill="#94A3B8">угол, на который сгибается палец</text>
+  </g>
+  <g id="kpi-lifetime" data-pptx-bounds="456 540 368 120">
+    <rect x="460" y="545" width="360" height="110" rx="14" fill="#131C2E" stroke="#263248" stroke-width="1.5" />
+    <text x="484" y="598" font-size="44" font-weight="bold" fill="#38BDF8">7+ дней</text>
+    <text x="484" y="634" font-size="18" fill="#94A3B8">столько жили мышцы в опытах</text>
+  </g>
+  <g id="kpi-teamwork" data-pptx-bounds="836 540 372 120">
+    <rect x="840" y="545" width="360" height="110" rx="14" fill="#131C2E" stroke="#263248" stroke-width="1.5" />
+    <text x="864" y="598" font-size="44" font-weight="bold" fill="#FBBF24">2 робота</text>
+    <text x="864" y="634" font-size="18" fill="#94A3B8">вместе подняли квадратную рамку</text>
+  </g>
+</svg>
