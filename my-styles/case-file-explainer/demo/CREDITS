@@ -1,0 +1,13 @@
+Attention That Won't Steer: Case File Explainer demo
+
+Fonts (SIL Open Font License 1.1), self-hosted in fonts/, taken from the Fontsource npm packages:
+  Poppins 700 / 800: Indian Type Foundry, https://github.com/itfoundry/Poppins (@fontsource/poppins 5.3.0)
+  Archivo Black: Omnibus-Type, https://github.com/Omnibus-Type/ArchivoBlack (@fontsource/archivo-black 5.3.0)
+
+Music and sound effects: synthesised in mix.py with numpy/scipy (no samples).
+Pictures: drawn in code (kit.js, main.js); no images, no generated media.
+
+Code techniques: the two-canvas emitter bloom follows the 80s Cel Anime demo of Lemo-Opuscar
+(styles/cel-anime-80s/demo), and the page helpers come from Lemo-Opuscar core/lib.js. Both are MIT licensed:
+  Copyright (c) the Lemo-Opuscar authors. Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software... (full text: $LIB/LICENSE)

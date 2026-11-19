@@ -1,0 +1,11 @@
+{
+ "slug": "case-file-explainer",
+ "en": "Case File Explainer",
+ "cn": "案件式讲解",
+ "based_on": "cel-anime-80s",
+ "borrows": ["caption-news", "visual-investigation"],
+ "library_version": "9eb7739",
+ "created": "2026-11-19",
+ "line": "A narrated explainer told like a true-crime case: bean figures in dusk-lit flat worlds, kinetic keyword captions, an evidence board and one case that becomes many.",
+ "line_cn": "像真实案件一样讲述的解说片：暮色光影中的豆豆人、关键词跳字幕、证据板，一个案例扩展到所有人。"
+}
